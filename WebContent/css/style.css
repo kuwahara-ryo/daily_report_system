@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+  font-size: 24px;
     display: inline;
 }
 
@@ -89,6 +89,7 @@ button {
     background-color: #f8d7da;
 }
 
+
 table#employee_list th {
     width: 30%;
     padding: 10px 2%;
@@ -105,6 +106,8 @@ tr.row1 {
 tr.row0 {
         background-color: #ffffff;
 }
+
+
 select {
     height: 30px;
 }
@@ -131,3 +134,4 @@ select {
 h1 a {
     color: #eeeeee;
 }
+
