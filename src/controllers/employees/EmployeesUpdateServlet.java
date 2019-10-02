@@ -39,7 +39,7 @@ public class EmployeesUpdateServlet extends HttpServlet {
         // TODO Auto-generated method stub
 
         String _token = (String)request.getParameter("_token");
-        if(_token != null && _token.equals("_token")){
+        if(_token != null && _token.equals(request.getSession().getId())){
             EntityManager em = DBUtil.createEntityManager();
             Employee e = em.find(Employee.class, (Integer)(request.getSession().getAttribute("employee_id")));
 
@@ -49,7 +49,6 @@ public class EmployeesUpdateServlet extends HttpServlet {
             } else {
                 e.setCode(request.getParameter("code"));
             }
-
 
             Boolean password_check_flag = true;
             String password = request.getParameter("password");
